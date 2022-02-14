@@ -11,7 +11,8 @@ namespace HashTables
         public k Key { get; set; }
         public v Value { get; set; }
     }
-    public class MyMapNode<k,v>
+
+    public class MyMapNode<k, v>
     {
         public int size;
         public LinkedList<KeyValue<k, v>>[] element;
@@ -78,5 +79,6 @@ namespace HashTables
                 list.Remove(foundElement);
             }
         }
+
     }
 }
